@@ -4,7 +4,6 @@ import type { ComponentName } from './runtime/components'
 import type { IconName } from './runtime/icons'
 import components from './runtime/components'
 import icons from './runtime/icons'
-import { QRCode } from 'antdv-next'
 
 // Module options TypeScript interface definition
 export interface ModuleOptions {
