@@ -62,7 +62,18 @@ export default defineNuxtModule<ModuleOptions>({
     const componentMap = {
       QRCode: 'Qrcode',
     }
-    components.forEach((comp) => {
+    // Filter components based on include/exclude options
+    const filteredComponents = components.filter((comp) => {
+      if (_options.include?.length) {
+        return _options.include.includes(comp)
+      }
+      if (_options.exclude?.length) {
+        return !_options.exclude.includes(comp)
+      }
+      return true
+    })
+
+    filteredComponents.forEach((comp) => {
       let _comp: string = comp
       if (comp in componentMap) {
         _comp = componentMap[comp as keyof typeof componentMap]
@@ -76,7 +87,17 @@ export default defineNuxtModule<ModuleOptions>({
 
     if (_options.icon !== false) {
       appendTranspile(iconLibName)
-      icons.forEach((icon) => {
+      // Filter icons based on include/exclude options
+      const filteredIcons = icons.filter((icon) => {
+        if (_options.includeIcons?.length) {
+          return _options.includeIcons.includes(icon)
+        }
+        if (_options.excludeIcons?.length) {
+          return !_options.excludeIcons.includes(icon)
+        }
+        return true
+      })
+      filteredIcons.forEach((icon) => {
         addComponent({
           filePath: iconLibName,
           export: icon,
