@@ -197,7 +197,7 @@ interface ScanResult {
   runtimeErrors: string[]
 }
 
-const SOURCE_COMPONENTS_DIR = '/Users/yanyu/workspace/gitea/antdv-next/antdv-next/playground/src/pages/components'
+const SOURCE_COMPONENTS_DIR = new URL('../playground/pages/components', import.meta.url).pathname
 
 const sourceComponentSlugs = readdirSync(SOURCE_COMPONENTS_DIR, { withFileTypes: true })
   .filter(item => item.isDirectory())
