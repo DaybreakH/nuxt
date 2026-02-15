@@ -10,7 +10,7 @@ importers:
     dependencies:
       '@antdv-next/cssinjs':
         specifier: ^1.0.2
-        version: 1.0.2(vue@3.5.28(typescript@5.9.3))
+        version: 1.0.2(patch_hash=cb88b7818fbed4c17d8327f6ed21a805a9335bf92ed5b8cfb32e4b7fa9d2733e)(vue@3.5.28(typescript@5.9.3))
       '@nuxt/kit':
         specifier: ^4.3.1
         version: 4.3.1(magicast@0.5.2)
@@ -5025,7 +5025,7 @@ snapshots:
 
   '@ant-design/icons-svg@4.4.2': {}
 
-  '@antdv-next/cssinjs@1.0.2(vue@3.5.28(typescript@5.9.3))':
+  '@antdv-next/cssinjs@1.0.2(patch_hash=cb88b7818fbed4c17d8327f6ed21a805a9335bf92ed5b8cfb32e4b7fa9d2733e)(vue@3.5.28(typescript@5.9.3))':
     dependencies:
       '@emotion/hash': 0.8.0
       '@emotion/unitless': 0.7.5
@@ -7261,7 +7261,7 @@ snapshots:
     dependencies:
       '@ant-design/colors': 7.2.1
       '@ant-design/fast-color': 3.0.1
-      '@antdv-next/cssinjs': 1.0.2(vue@3.5.28(typescript@5.9.3))
+      '@antdv-next/cssinjs': 1.0.2(patch_hash=cb88b7818fbed4c17d8327f6ed21a805a9335bf92ed5b8cfb32e4b7fa9d2733e)(vue@3.5.28(typescript@5.9.3))
       '@antdv-next/icons': 1.0.1(vue@3.5.28(typescript@5.9.3))
       '@v-c/async-validator': 1.0.0
       '@v-c/cascader': 1.0.1(vue@3.5.28(typescript@5.9.3))
