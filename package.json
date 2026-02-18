@@ -37,9 +37,9 @@
     "test:types": "vue-tsc --noEmit && cd playground && vue-tsc --noEmit"
   },
   "peerDependencies": {
-    "@antdv-next/icons": "^1.0.1",
-    "antdv-next": "^1.0.4-beta.2",
-    "nuxt": "^4.0.0"
+    "@antdv-next/icons": ">=1.0.1",
+    "antdv-next": ">=1.0.4-beta.2",
+    "nuxt": ">=4.0.0"
   },
   "dependencies": {
     "@antdv-next/cssinjs": "^1.0.3-beta.1",
