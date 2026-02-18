@@ -24,6 +24,13 @@
 - SSR-safe CSS-in-JS setup and style extraction on server render.
 - Adds `vite-plugin-dayjs` automatically when using Vite builder.
 
+## Version Requirements
+
+- Nuxt >= 4.0.0
+- Vue >= 3.5.0
+- antdv-next >= 1.0.4
+- @antdv-next/icons >= 1.0.1
+
 ## Installation
 
 ```bash
@@ -66,7 +73,7 @@ export default defineNuxtConfig({
 })
 ```
 
-For zero-runtime theme mode, also include:
+For zero-runtime theme mode (recommended), also include:
 
 ```ts
 export default defineNuxtConfig({
@@ -76,6 +83,12 @@ export default defineNuxtConfig({
   ],
 })
 ```
+
+> [!WARNING]
+> If `nuxt devtools` is enabled, style loading in development may become slower.  
+> If you see slow style hydration or temporarily unclickable UI, try disabling `nuxt devtools`, or wait until related loading in the console is finished.
+>
+> This does not affect normal precompiled development flow or production builds.
 
 ## Options
 

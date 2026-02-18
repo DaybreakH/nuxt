@@ -24,6 +24,13 @@
 - 内置 SSR 场景下的 CSS-in-JS 上下文与服务端样式提取。
 - 使用 Vite Builder 时自动注入 `vite-plugin-dayjs`。
 
+## 版本要求
+
+- Nuxt >= 4.0.0
+- Vue >= 3.5.0
+- antdv-next >= 1.0.4
+- @antdv-next/icons >= 1.0.1
+
 ## 安装
 
 ```bash
@@ -66,7 +73,7 @@ export default defineNuxtConfig({
 })
 ```
 
-如果使用 zero-runtime 主题模式，还需要引入：
+如果使用 zero-runtime 主题模式（推荐模式），还需要引入：
 
 ```ts
 export default defineNuxtConfig({
@@ -76,6 +83,12 @@ export default defineNuxtConfig({
   ],
 })
 ```
+
+> [!WARNING]
+> 如果开启了 `nuxt devtools`，开发模式下的样式加载可能会变慢。  
+> 如果你遇到样式加载过慢或页面暂时无法正常点击的情况，请先尝试关闭 `nuxt devtools`，或等待 `console` 中相关加载完成后再操作。
+>
+> 该问题不会影响正常预编译开发流程，也不会影响生产环境。
 
 ## 选项
 
